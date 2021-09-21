@@ -101,3 +101,9 @@ code {
         padding-top: 160px;
     }
 }
+
+@media (max-height: 560px) {
+    #navbar {
+        overflow: scroll;
+    }
+}

@@ -95,6 +95,10 @@ code {
 
     #main-doc {
         margin-left: 2%;
-        padding-top: 37%;
+        padding-top: 160px;
+    }
+
+    .nav-link {
+        padding: 5px;
     }
 }

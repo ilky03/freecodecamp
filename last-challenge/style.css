@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Bonheur+Royale&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #FEFEFE;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #A2B5B9;
+    opacity: 0.7;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-right: 20px;
+    z-index: 999;
+}
+
+#navbar li {
+    display: inline-block;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #FEFEFE;
+    padding-left: 10px;
+}
+
+.nav-link:hover {
+    color: #897CB1;
+}
+
+#welcome-section {
+    font-family: 'Bonheur Royale', cursive;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+    font-size: 100px;
+}
+
+#welcome-section::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(
+        115deg,
+        rgba(137, 124, 177, 0.7),
+        rgba(137, 124, 177, 0.7)
+      ),
+      url(https://i.pinimg.com/736x/fb/c3/e3/fbc3e38afb55ae10f51cd5f5e96d589e--minimalist-web-design-web-design-examples.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#welcome-section h1, p{
+    margin: 0;
+}
+
+
+#projects {
+    background-color: #FEFEFE;
+    color: #897CB1;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    -moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1700px;
+}
+
+.project-tile {
+    padding: 20px;
+}
+
+.project-link {
+    margin: 10px;
+    transition: .8s;
+}
+
+.project-link:hover {
+    transform: translateY(-10px);
+    background-color: #897CB1;
+    color: #fefefe;
+    -webkit-box-shadow: 0px 5px 52px 12px rgba(34, 60, 80, 0.42);
+    -moz-box-shadow: 0px 5px 52px 12px rgba(34, 60, 80, 0.42);
+    box-shadow: 0px 5px 52px 12px rgba(34, 60, 80, 0.42);
+    border-radius: 30px;
+}
+
+.project-img {
+    height: 350px;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.project-button {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    font-weight: 700;
+    width: 20%;
+    transition: .8s;
+}
+
+.project-button a {
+    display: block;
+}
+
+.project-button a:hover {
+    color: #FEFEFE;
+}
+
+.project-button:hover{
+    -webkit-box-shadow: 0px 5px 52px 12px rgba(34, 60, 80, 0.42);
+    -moz-box-shadow: 0px 5px 52px 12px rgba(34, 60, 80, 0.42);
+    box-shadow: 0px 5px 52px 12px rgba(34, 60, 80, 0.42);
+    background-color: #897CB1;
+}
+
+#contact {
+    padding: 50px 20px;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+    background-color: #9dba35;
+    background-image: url(https://img5.goodfon.ru/original/1920x1408/e/d1/uzor-tekstura-treugolnik-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.contact-title {
+    font-size: 60px;
+}
+
+.social-link {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.social-link a {
+    color: black;
+}
+
+.social-link a:hover {
+    color: white;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: gray;
+    text-align: center;
+}
+
+.footer-info {
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.footer-info a{
+    color:#FEFEFE;
+}
+
+@media (max-width: 1200px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #welcome-section {
+        font-size: 40px;
+    }
+
+    .contact-title {
+        font-size: 30px;
+    }
+}
+
+@media  (max-width: 400px) {
+    #projects {
+        display: block;
+    }
+
+    .project-img {
+        height: 200px;
+    }
+}
